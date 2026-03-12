@@ -1,60 +1,63 @@
-import React from 'react'
+"use client";
 import { IoIosArrowForward } from 'react-icons/io'
 
 import UniversalCard from './UniversalCard';
 import { CardData } from '@/types/carttype';
+import { useLocale, useTranslations } from 'next-intl';
 
-const listings:CardData[] = [
-  {
-    id: 1,
-    title: "01 Dedicated desk",
-    type: "dedicated disk",
-    Review:0,
-    price: "75.00 SAR",
-    unit: "/Day",
-    capacity: "1 Person",
-    status: "Available",
-    image: "/images/Latest 1.jpeg", // استبدلها بمسار صورك
-    description: "Our dedicated desk offers professional,private,permanent workspace within our shared-area",
-  },
-  {
-    id: 2,
-    title: "02 Dedicated desk",
-    type: "dedicated disk",
-    Review:0,
-    price: "75.00 SAR",
-    unit: "/Day",
-    capacity: "1 Person",
-    status: "Available",
-    image: "/images/Latest 2.jpg", // استبدلها بمسار صورك
-    description: "Our dedicated desk offers professional,private,permanent workspace within our shared-area",
-  },
-  {
-    id: 3,
-    title: "03 Dedicated desk",
-    type: "dedicated disk",
-    Review:0,
-    price: "75.00",
-    unit: "/Day",
-    capacity: "1 Person",
-    status: "Available",
-    image: "/images/Latest 3.jpg", // استبدلها بمسار صورك
-    description: "Our dedicated desk offers professional,private,permanent workspace within our shared-area",
-  },
-  {
-    id: 4,
-    title: "04 Dedicated desk",
-    type: "dedicated disk",
-    Review:0,
-    price: "75.00 SAR",
-    unit: "/Day",
-    capacity: "1 Person",
-    status: "Not Available",
-    image:  "/images/Latest 4.jpg", // استبدلها بمسار صورك
-    description: "Our dedicated desk offers professional,private,permanent workspace within our shared-area",
-  }
-];
 export default function Dedicated() {
+      const t = useTranslations("Products");
+    const locale = useLocale();
+  const listings:CardData[] = [
+    {
+      id: 1,
+     title: t("title1"),
+    type: t("type1"),
+    price: t("price1"),
+    unit: t("unit1"),
+    capacity: t("capacity1"),
+    description: t("description1"),
+      Review:0,
+      status: "Available",
+      image: "/images/Latest 1.jpeg", // استبدلها بمسار صورك
+    },
+    {
+      id: 2,
+   title: t("title2"),
+    type: t("type2"),
+    price: t("price2"),
+    unit: t("unit2"),
+    capacity: t("capacity2"),
+    description: t("description2"),
+      status: "Available",
+      image: "/images/Latest 2.jpg", // استبدلها بمسار صورك
+      Review:0,
+    },
+    {
+      id: 3,
+        title: t("title3"),
+    type: t("type3"),
+    price: t("price3"),
+    unit: t("unit3"),
+    capacity: t("capacity3"),
+    description: t("description3"),
+      status: "Available",
+      Review:0,
+      image: "/images/Latest 3.jpg", // استبدلها بمسار صورك
+    },
+    {
+      id: 4,
+        title: t("title4"),
+    type: t("type4"),
+    price: t("price4"),
+    unit: t("unit4"),
+    capacity: t("capacity4"),
+    description: t("description4"),
+      Review:0,
+      status: "Not Available",
+      image:  "/images/Latest 4.jpg", // استبدلها بمسار صورك
+    }
+  ];
   return (<>
       <section className="bg-[#f5f5f5] py-10">
         <div className="w-full max-w-[85%] mx-auto  ">

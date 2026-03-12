@@ -1,37 +1,41 @@
-import React from 'react'
-import { IoIosArrowForward } from 'react-icons/io'
+"use client";
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 import UniversalCard from './UniversalCard';
 import { CardData } from '@/types/carttype';
+import { useLocale, useTranslations } from 'next-intl';
 
-const listings:CardData[] = [
-  {
-    id: 1,
-    title: "Shared Coworking Spaces",
-    type: "Shared Area",
-    price: "17.25 SAR",
-    Review:4,
-    unit: "/Hour",
-    capacity: "22 Person",
-    status: "Available",
-    image: "/images/shared.jpg", // استبدلها بمسار صورك
-    description: "Stop going to Coffee shops to accomplish your work, they are always crowded and noisy,",
-  }
-
-];
 export default function Shared() {
+      const t = useTranslations("listings")
+    const locale = useLocale();
+  const listings:CardData[] = [
+    {
+      id: 1,
+   title: t("title1"),
+    type: t("type1"),
+    price: t("price1"),
+    unit: t("unit1"),
+    capacity: t("capacity1"),
+    description: t("description1"),
+    Review:4,
+      image: "/images/shared.jpg", // استبدلها بمسار صورك
+      status: "Available",
+    }
+  
+  ];
   return (<>
       <section className="bg-white py-10">
         <div className="w-full max-w-[85%] mx-auto  ">
             <div className="flex items-center justify-between">
                 <div className="">
-                    <h2 className='text-[30px] font-bold'>Shared Area In Jeddah</h2>
-                    <p className='text-md mt-1 '>Check our latest listings</p>
+                    <h2 className='text-[30px] font-bold'>{t("title")}</h2>
+                    <p className='text-md mt-1 '>{t("des")}</p>
                 </div>
                 <p className='capitalize text-md flex items-center gap-2  cursor-pointer'>
-                    show More 
+                   {t("show")}
                     <span className="inline-block animate-move-right">
-                        <IoIosArrowForward />
+                    {locale === "ar" ? <IoIosArrowBack  /> : <IoIosArrowForward />} 
+                    
                     </span>
                 </p>
             </div>

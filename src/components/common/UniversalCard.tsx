@@ -1,27 +1,34 @@
-import React from 'react'
-import { IoIosArrowForward, IoIosStar } from 'react-icons/io'
+"use client";
+import { useLocale } from 'next-intl';
+import { IoIosArrowBack, IoIosArrowForward, IoIosStar } from 'react-icons/io'
 import Image from 'next/image';
 import { HiOutlineUsers } from 'react-icons/hi'; // تأكد من تثبيت react-icons
 import { TbShare3 } from 'react-icons/tb';
 import { LuHeart } from 'react-icons/lu';
 import { BiDockTop } from 'react-icons/bi';
 import { CardData } from '@/types/carttype';
+import { AiOutlineEye } from 'react-icons/ai';
 interface Props {
   data: CardData;
 }
 export default function UniversalCard({ data }: Props) {
+  const locale = useLocale();
   return (
    <div key={data.id} className="rounded-xl mt-8 shadow-sm border border-gray-100 overflow-hidden flex flex-col">
              
              {/* Image Section */}
-             <div className="relative h-48 w-full ">
+             <div className="relative h-48 w-full group cursor-pointer overflow-hidden">
                <Image 
                  src={data.image} 
                  alt={data.title} 
                  fill 
-                 className="object-cover p-1 rounded-xl"
+                 className="object-cover p-1 rounded-xl "
                />
-               {/* Badge (Available/Not Available) */}
+                <div className="absolute inset-1 rounded-xl bg-green-950/45 flex flex-col items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-600 ease-in-out z-10">
+                  {/* أيقونة العين في المنتصف */}
+                  <AiOutlineEye className="text-white text-4xl" />
+                </div>
+            
                <div className={`absolute top-0 left-0 px-10 py-1 -rotate-45 -translate-x-8 translate-y-6 text-center flex items-center justify-center text-xs font-bold  shadow-md ${
                  data.status === 'Available' ? 'bg-[#a7bc9d] text-black' : 'bg-[#ae5b5b]  text-white'
                }`}>
@@ -66,14 +73,14 @@ export default function UniversalCard({ data }: Props) {
                {/* Footer Price */}
                <div className="flex items-center justify-between pt-4">
                  <div className='flex items-center'>
-                   <p className="text-[13px] text-gray-400 font-semibold capitalize">Starts From:</p>
+                   <p className="text-[13px] text-gray-400 font-semibold capitalize"> {locale === "ar" ? "يبدأ من:" : "Starts From:"} </p>
                    <p className="text-sm font-bold text-gray-800">
                      {data.price} <span className="text-gray-400 font-normal text-xs">{data.unit}</span>
                    </p>
                  </div>
                  
                    <span className="inline-block animate-move-right">
-                       <IoIosArrowForward />
+                    {locale === "ar" ? <IoIosArrowBack  /> : <IoIosArrowForward />} 
                    </span>
                </div>
              </div>

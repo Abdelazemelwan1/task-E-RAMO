@@ -1,72 +1,75 @@
-import React from 'react'
-import { IoIosArrowForward } from 'react-icons/io'
+"use client";
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 import UniversalCard from './UniversalCard';
 import { CardData } from '@/types/carttype';
+import { useLocale, useTranslations } from 'next-intl';
 
-const listings:CardData[] = [
-  {
-    id: 1,
-    title: "Lawyer Private Office 01",
-    type: "Private Office",
-    Review:0,
-    price: "2.799.00 SAR",
-    unit: "/Hour",
-    capacity: "1 Person",
-    status: "Available",
-    image: "/images/Latest 2.jpg", // استبدلها بمسار صورك
-    description: "Being Lawyer is a very critical job, your clients need quiet private office to confess and to exp...",
-  },
-  {
-    id: 2,
-    title: "Triple or Quadrable private office",
-    type: "Private Office",
-    Review:0,
-    price: "6,499.00 SAR",
-    unit: "/Month",
-    capacity: "3 Person",
-    status: "Not Available",
-    image: "/images/Latest 3.jpg", // استبدلها بمسار صورك
-    description: "If you need to have your own office but can't afford the high rent costs, Enjoy our private...",
-  },
-  {
-    id: 3,
-    title: "03 Double private office",
-    type: "Private Office",
-    Review:0,
-    price: "3,799.00",
-    unit: "/Month",
-    capacity: "2 Person",
-    status: "Not Available",
-    image: "/images/private3.jpg", // استبدلها بمسار صورك
-    description: "Our dedicated desk offers professional,private,permanent workspace within our shared-area",
-  },
-  {
-    id: 4,
-    title: "05 Double private office",
-    type: "Private Office",
-    Review:0,
-    price: "3,799.00 SAR",
-    unit: "/Hour",
-    capacity: "2 Person",
-    status: "Not Available",
-    image:  "/images/private4.jpg", // استبدلها بمسار صورك
-    description: "If you need to have your own office but can't afford the high rent costs, Enjoy our private...",
-  }
-];
 export default function Private () {
+      const t = useTranslations("Products");
+    const locale = useLocale();
+  const listings:CardData[] = [
+    {
+      id: 1,
+    title: t("title1"),
+    type: t("type1"),
+    price: t("price1"),
+    unit: t("unit1"),
+    capacity: t("capacity1"),
+    description: t("description1"),
+      Review:0,
+      status: "Available",
+      image: "/images/Latest 2.jpg", // استبدلها بمسار صورك
+    },
+    {
+      id: 2,
+     title: t("title2"),
+    type: t("type2"),
+    price: t("price2"),
+    unit: t("unit2"),
+    capacity: t("capacity2"),
+    description: t("description2"),
+      Review:0,
+      status: "Not Available",
+      image: "/images/Latest 3.jpg", // استبدلها بمسار صورك
+    },
+    {
+      id: 3,
+   title: t("title3"),
+    type: t("type3"),
+    price: t("price3"),
+    unit: t("unit3"),
+    capacity: t("capacity3"),
+    description: t("description3"),
+      status: "Not Available",
+      Review:0,
+      image: "/images/private3.jpg", // استبدلها بمسار صورك
+    },
+    {
+      id: 4,
+       title: t("title4"),
+    type: t("type4"),
+    price: t("price4"),
+    unit: t("unit4"),
+    capacity: t("capacity4"),
+    description: t("description4"),
+      Review:0,
+      status: "Not Available",
+      image:  "/images/private4.jpg", // استبدلها بمسار صورك
+    }
+  ];
   return (<>
       <section className="bg-white py-10">
         <div className="w-full max-w-[85%] mx-auto  ">
             <div className="flex items-center justify-between">
                 <div className="">
-                    <h2 className='text-[30px] font-bold'>Private Office In Jeddah</h2>
-                    <p className='text-md mt-1 '>Check our latest listings</p>
+                    <h2 className='text-[30px] font-bold'>{t("title")}</h2>
+                    <p className='text-md mt-1 '>{t("des")}</p>
                 </div>
                 <p className='capitalize text-md flex items-center gap-2  cursor-pointer'>
-                    show More 
+                  {t("show")}
                     <span className="inline-block animate-move-right">
-                        <IoIosArrowForward />
+                        {locale === "ar" ? <IoIosArrowBack  /> : <IoIosArrowForward />} 
                     </span>
                 </p>
             </div>

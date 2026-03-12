@@ -2,7 +2,291 @@
     "NavBar":{
         "Language": "العربية",
         "Home":"Home",
-        "About" :"About"
+        "About" :"About",
+        "Products" :"Products",
+        "HowItWorks" :"How It Works",
+        "Membership" :"Membership",
+        "Blogs" :"Blogs",
+        "Contact_Us" :"Contact Us",
+        "Create_Account" :"Create Account",
+        "login" :"Login"
 
-    }
+    },
+      "Hero": {
+        "title1" : "Office That Fit You",
+        "des1" : "Coworking & Flexible Office Marketplace | Search & Book Today",
+        "title2" : "Co Working Spaces Fits You",
+        "des2" : "Coworking & Flexible Office Marketplace | Search & Book Today",
+        "SharedArea": "Shared Area",
+    "PrivateOffices": "Private Offices",
+    "MeetingRooms": "Meeting Rooms",
+    "DedicatedDesks": "Dedicated Desks",
+    "SearchPlaceholder": "Search here...",
+    "SearchButton": "Search"
+    },
+    
+  "About": {
+    "Title": "About Chair Location",
+    "Description": "Chair location is a website/mobile app where you can search, find and reserve co-working space, including co-working offices, private offices, meeting rooms, and virtual offices in Jeddah near you.",
+    "HowItWorksTitle": "How Chair Location Works",
+    "WhyTitle": "  is a platform designed to connect individuals and businesses looking for flexible workspaces with providers of these spaces. Think of it as a digital marketplace where you can browse, compare, and book the space that perfectly suits your needs.",
+    "HowItWorksDescbold": "Chair Location ",
+    "HowItWorksDesc": "Chair Location ",
+    "ProcessTitle": "The Search and Booking Process",
+    
+      "SearchTitle": "Search: ",
+      "SearchDesc": "Your experience begins by searching for coworking spaces in Jeddah or any other city the platform supports.",
+      "BrowseTitle": "Browse and Compare: ",
+      "BrowseDesc": "A list of available spaces matching your search will appear.",
+      "BookTitle": "Book: ",
+      "BookDesc": "Once you've chosen the right space, the platform offers a simple and direct booking process.",
+   
+    "TargetTitle": "Who is Chair Location For?",
+    
+      "FreelancersTitle": "Freelancers and Entrepreneurs: ",
+      "FreelancersDesc": "Who need a professional work environment away from home.",
+      "StartupsTitle": "Startups: ",
+      "StartupsDesc": "Looking for flexibility and lower operational costs compared to traditional offices.",
+      "TeamsTitle": "Small Teams: ",
+      "TeamsDesc": "Who need a place to meet or work on specific projects.",
+      "TravelersTitle": "Business Travelers: ",
+      "TravelersDesc": "Who require a place to work while in Jeddah.",
+    
+    "Summary": "In short, Chair Location acts as a bridge, quickly and easily connecting you to the space you need to work effectively in Jeddah.",
+    "WhyTitleds": "Why Chair Location",
+    "AmenityText": "We Offer All Amenities in Our All Location",
+    "SupportText": "All Kinds Of Support 24/7",
+    "OfficesCount": "Choose from 40 Offices",
+    "contact" :"Contact Us",
+     "sava" : "Book Now"
+
+  },
+
+  "Products": {
+    "title":"Latest Listings In Jeddah",
+    "des" : "Check our latest listings",
+    "show" : "show More",
+   "title1": "Small Meeting Room",
+    "type1": "Meeting Room",
+    "price1": "75.00 SAR",
+    "unit1": "/Hour",
+    "capacity1": "4 Person",
+    "status1": "Available",
+    "description1": "A cozy, quiet space designed for focused studying or small meetings. This room comfortably seats ....",
+
+    "title2": "Lawyer Private Office 01",
+    "type2": "Private Office",
+    "price2": "2,799.00 SAR",
+    "unit2": "/Month",
+    "capacity2": "1 Person",
+    "status2": "Available",
+    "description2": "Being Lawyer is a very critical job, your clients need quiet private office to confess and to explain their cases...",
+
+    "title3": "Triple or Quadruple private",
+    "type3": "Private Office",
+    "price3": "57.50 SAR",
+    "unit3": "/Month",
+    "capacity3": "3 Person",
+    "status3": "Not Available",
+    "description3": "Our dedicated desk offers professional, private, permanent workspace within our shared-area",
+
+    "title4": "01 Dedicated desk",
+    "type4": "Dedicated desk",
+    "price4": "75.00 SAR",
+    "unit4": "/Hour",
+    "capacity4": "1 Person",
+    "status4": "Available",
+    "description4": "A cozy, quiet space designed for focused studying or small meetings..."  },
+    "DownloadSection" : {
+    "title" : "Explore Chair Location App",
+    "description": "Hybrid working offers you the freedom to work closer to clients, colleagues or home. It's also greener",
+    "Download" : " Download on"
+  },
+  
+  "listings": {
+     "title":"Shared Area In Jeddah",
+    "des" : "Check our latest listings",
+    "show" : "show More",
+    "title1": "Shared Coworking Spaces",
+    "type1": "Shared Area",
+    "price1": "17.25 SAR",
+    "unit1": "/Hour",
+    "capacity1": "22 Person",
+    "description1": "Stop going to Coffee shops to accomplish your work, they are always crowded and noisy, we provide the peace and focus you need."
+  },
+
+ "Meeting": {
+    "title":"Meeting Room In Jeddah",
+    "des" : "Check our latest listings",
+    "show" : "show More",
+   "title1": "Small Meeting Room",
+    "type1": "Meeting Room",
+    "price1": "75.00 SAR",
+    "unit1": "/Hour",
+    "capacity1": "4 Person",
+    "status1": "Available",
+    "description1": "A cozy, quiet space designed for focused studying or small meetings. This room comfortably seats ....",
+
+    "title2": "Lawyer Private Office 01",
+    "type2": "Private Office",
+    "price2": "2,799.00 SAR",
+    "unit2": "/Month",
+    "capacity2": "1 Person",
+    "status2": "Available",
+    "description2": "Being Lawyer is a very critical job, your clients need quiet private office to confess and to explain their cases...",
+
+    "title3": "Triple or Quadruple private",
+    "type3": "Private Office",
+    "price3": "57.50 SAR",
+    "unit3": "/Month",
+    "capacity3": "3 Person",
+    "status3": "Not Available",
+    "description3": "Our dedicated desk offers professional, private, permanent workspace within our shared-area",
+
+    "title4": "01 Dedicated desk",
+    "type4": "Dedicated desk",
+    "price4": "75.00 SAR",
+    "unit4": "/Hour",
+    "capacity4": "1 Person",
+    "status4": "Available",
+    "description4": "A cozy, quiet space designed for focused studying or small meetings..."  },
+    
+
+ "Private": {
+    "title":"Private Office In Jeddah",
+    "des" : "Check our latest listings",
+    "show" : "show More",
+   "title1": "Small Meeting Room",
+    "type1": "Meeting Room",
+    "price1": "75.00 SAR",
+    "unit1": "/Hour",
+    "capacity1": "4 Person",
+    "status1": "Available",
+    "description1": "A cozy, quiet space designed for focused studying or small meetings. This room comfortably seats ....",
+
+    "title2": "Lawyer Private Office 01",
+    "type2": "Private Office",
+    "price2": "2,799.00 SAR",
+    "unit2": "/Month",
+    "capacity2": "1 Person",
+    "status2": "Available",
+    "description2": "Being Lawyer is a very critical job, your clients need quiet private office to confess and to explain their cases...",
+
+    "title3": "Triple or Quadruple private",
+    "type3": "Private Office",
+    "price3": "57.50 SAR",
+    "unit3": "/Month",
+    "capacity3": "3 Person",
+    "status3": "Not Available",
+    "description3": "Our dedicated desk offers professional, private, permanent workspace within our shared-area",
+
+    "title4": "01 Dedicated desk",
+    "type4": "Dedicated desk",
+    "price4": "75.00 SAR",
+    "unit4": "/Hour",
+    "capacity4": "1 Person",
+    "status4": "Available",
+    "description4": "A cozy, quiet space designed for focused studying or small meetings..."  },
+
+
+  "plans": {
+        "badge": "pricing",
+        "title1" : "Choose Your Perfect Plan with Transparent Pricing",
+        "desc1" : "Enjoy flexible plans tailored to your needs, whether you require shared workspace, meeting rooms, private offices, or dedicated desks. Pick the plan that suits you and start your journey today!",
+      
+        "prag": "For mid companies",
+        "title": "Entrepreneurs' Membership",
+        "desc": "Enjoy 130 hours in shared area and 20 hours meeting room",
+        "included": "What's included",
+        "included1": "100 hours shared area",
+        "included2": "5 hours meeting rooms",
+        "Buy" : "Buy MemberShip",
+        "select" : "Select From The Upcoming Options",
+        "select1" : "Shared Space",
+        "select2" : "Private Offices",
+        "select3" : "Meeting Rooms",
+        "select4" : "Dedicated Desk",
+        "secure_pay": "Secure Payments",
+    "instant_act": "Instant Activation",
+    "flexible_can": "Flexible Cancellation"
+      
+    },
+     
+ "articles": {
+    "section_title": "Our Recent Articles",
+    "section_subtitle": "Stay Informed with Our Latest Insights",
+    "view_all": "View All News",
+    
+    "title1": "Remote Work In Jeddah: Top Tips And Best Workspace Options",
+    "date1": "2026-03-12 12:12 PM",
+    "desc1": "Remote work is reshaping Jeddah's professional landscape. Find the best workspace options for your career growth.",
+
+    "title2": "Book Hourly Workspaces In Jeddah With The Best Rate | Chair Location",
+    "date2": "2026-03-12 11:58 AM",
+    "desc2": "Discover how to book hourly workspaces in Jeddah at the best rates with Chair Location, the number one provider.",
+
+    "title3": "Top 10 Meeting Room Locations In Jeddah: Your Comprehensive Guide To A Professional Work Environment",
+    "date3": "2026-03-10 2:53 PM",
+    "desc3": "Discover the top 10 places offering meeting rooms in Jeddah, and learn about the leading services of professional environments.",
+
+    "title4": "Book Hourly Workspaces In Jeddah With The Best Rate: Your Ultimate Guide",
+    "date4": "2026-03-12 12:52 PM",
+    "desc4": "Book hourly workspaces in Jeddah with Chair Location—the top provider for Jeddah meeting rooms,",
+
+    "title5": "Book Hourly Workspaces In Jeddah With The Best Rates – Chair Location Leads The Way",
+    "date5": "2026-03-12 12:36 PM",
+    "desc5": "Discover the best rates for booking hourly workspaces in Jeddah with Chair Location, the leading pro",
+
+    "title6": "Book Hourly Workspaces In Jeddah With The Best Rates: Discover Chair Location’s Top Services",
+    "date6": "2026-03-12 12:25 PM",
+    "desc6": "Book hourly workspaces in Jeddah with Chair Location – the top service for affordable Jeddah"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "We Are Here For Your Help",
+    "name": "Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "send": "Send",
+    "followUs": "Follow us"
+  },
+  "Newsletter": {
+    "title": "Subscribe To Our Newsletter",
+    "description": "Every couple of weeks we send out an update and a few things that have inspired us.",
+    "placeholder": "Write Your Mail Here...",
+    "button": "Subscribe"
+  },
+  "Footer": {
+    "sections": {
+      "pages": "Main Pages",
+      "products": "Products",
+      "apps": "Download Chair Location App"
+    },
+    "links": {
+      "home": "Home Page",
+      "about": "About Us",
+      "products": "Products",
+      "howItWorks": "How it works",
+      "membership": "Membership",
+      "contact": "Contact Us",
+      "sharedSpace": "Shared Space",
+      "privateOffice": "Private Office",
+      "meetingRoom": "Meeting Room",
+      "dedicatedDesk": "Dedicated Desks",
+      "siteMap": "Site Map"
+    },
+    "apps": {
+      "downloadFrom": "Download from"
+    },
+    "bottom": {
+     "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "terms2": "Co-working Spaces",
+      "terms3": "Offices for Rent",
+      "terms4": "Shared Space",
+      "terms5": "Dedicated Desks",
+      "rights": "2026 All rights reserved for Chair Location | Developed by e-RAMO For Digital Solutions"  }
+  }
+
 }

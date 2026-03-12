@@ -1,71 +1,80 @@
-import React from 'react'
-import { IoIosArrowForward } from 'react-icons/io'
+"use client";
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import UniversalCard from './UniversalCard';
 import { CardData } from '@/types/carttype';
+import { useLocale, useTranslations } from 'use-intl';
 
-const listings:CardData[] = [
-  {
-    id: 1,
-    title: "Small Meeting Room",
-    type: "Meeting Room",
-    Review:0,
-    price: "57.50 SAR",
-    unit: "/Hour",
-    capacity: "4 Person",
-    status: "Available",
-    image: "/images/Latest 1.jpeg", // استبدلها بمسار صورك
-    description: "A cozy, quiet space designed for focused studying or small meetings. This room comfortably seats ....",
-  },
-  {
-    id: 2,
-    title: "Lecture Room",
-    type: "Meeting Room",
-    Review:0,
-    price: "230.00 SAR",
-    unit: "/Month",
-    capacity: "130 Person",
-    status: "Available",
-    image: "/images/meeting2.jpg", // استبدلها بمسار صورك
-    description: "Interactive sessions are the perfect way of delivering a lecture, Enjoy our Lecture room ...",
-  },
-  {
-    id: 3,
-    title: "Master Meeting Room",
-    type: "Meeting Room",
-    Review:0,
-    price: "138.00",
-    unit: "/Month",
-    capacity: "12 Person",
-    status: "Available",
-    image: "/images/meeting3.jpg", // استبدلها بمسار صورك
-    description: "If you fail to plan, so you are planning to fail, It's all about good planning, Enjoy our...",
-  },
-  {
-    id: 4,
-    title: "Luxury Meeting Room",
-    type: "Meeting Room",
-    Review:0,
-    price: "172.50 SAR",
-    unit: "/Hour",
-    capacity: "8 Person",
-    status: "Available",
-    image:  "/images/meeting4.jpg", // استبدلها بمسار صورك
-    description: "Creativity and brainstorming meeting room with 8 person capacity, Enjoy your ultima...",
-  }
-];
 export default function MeetingRoom() {
+  const t = useTranslations("Meeting")
+      const locale = useLocale();
+  const listings:CardData[] = [
+    {
+      id: 1,
+
+      title: t("title1"),
+    type: t("type1"),
+    price: t("price1"),
+    unit: t("unit1"),
+    capacity: t("capacity1"),
+    description: t("description1"),
+   
+      status: "Available",
+      Review:0,
+      image: "/images/Latest 1.jpeg", // استبدلها بمسار صورك
+    },
+    {
+      id: 2,
+
+     title: t("title2"),
+    type: t("type2"),
+    price: t("price2"),
+    unit: t("unit2"),
+    capacity: t("capacity2"),
+    description: t("description2"),
+      image: "/images/meeting2.jpg", // استبدلها بمسار صورك
+      status: "Available",
+      Review:0,
+    },
+    {
+      id: 3,
+
+    title: t("title3"),
+    type: t("type3"),
+    price: t("price3"),
+    unit: t("unit3"),
+    capacity: t("capacity3"),
+    description: t("description3"),
+      Review:0,
+      status: "Available",
+      image: "/images/meeting3.jpg", // استبدلها بمسار صورك
+    },
+    {
+      id: 4,
+
+    title: t("title4"),
+    type: t("type4"),
+    price: t("price4"),
+    unit: t("unit4"),
+    capacity: t("capacity4"),
+    description: t("description4"),
+      Review:0,
+      status: "Available",
+      image:  "/images/meeting4.jpg", // استبدلها بمسار صورك
+    }
+  ];
   return (<>
       <section className="bg-[#f5f5f5] py-10">
         <div className="w-full max-w-[85%] mx-auto  ">
             <div className="flex items-center justify-between">
                 <div className="">
-                    <h2 className='text-[30px] font-bold'>Meeting Room In Jeddah</h2>
-                    <p className='text-md mt-1 '>Check our latest listings</p>
+                    <h2 className='text-[30px] font-bold'>{t("title")}</h2>
+                    <p className='text-md mt-1 '>{t("des")}</p>
                 </div>
                 <p className='capitalize text-md flex items-center gap-2  cursor-pointer'>
-                    show More 
+                    {t("shows")}
                     <span className="inline-block animate-move-right">
-                        <IoIosArrowForward />
+                                                {locale === "ar" ? <IoIosArrowBack  /> : <IoIosArrowForward />} 
+
                     </span>
                 </p>
             </div>

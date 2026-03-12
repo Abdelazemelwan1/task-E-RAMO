@@ -13,3 +13,20 @@
     animation: moveRight 1s ease-in-out infinite;
   }
 }
+
+
+.blobs {
+  filter: url('#goo');
+}
+
+.blob-btn:hover .blob {
+  transform: translateZ(0) scale(1.7);
+
+}
+
+@supports (filter: url("#goo")) {
+  .blob-btn:hover .blob {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+

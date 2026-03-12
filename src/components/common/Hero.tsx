@@ -8,19 +8,24 @@ import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
-const HERO_DATA = [
-    {img: "/images/Hero.png", title: "Office That Fit You", desc:"Coworking & Flexible Office Marketplace | Search & Book Today" },
-    {img: "/images/Hero.png", title: "Co Working Spaces Fits You", desc:"Coworking & Flexible Office Marketplace | Search & Book Today" }
-]
+import { usePathname } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
-const tabs = [
-    { name: "Shared Space", icon: "👥" },
-    { name: "Private Offices", icon: "🏢" },
-    { name: "Meeting Rooms", icon: "🤝" },
-    { name: "Dedicated Desk", icon: "🖥️" },
-  ];
 export default function Hero() {
-const [activeTab, setActiveTab] = useState("Shared Space");
+  const pathname = usePathname();
+  const t = useTranslations("Hero")
+  const [activeTab, setActiveTab] = useState("Shared Space");
+    const HERO_DATA = [
+      {img: "/images/Hero.png", title: t("title1"), desc:t("des1") },
+      {img: "/images/Hero.png", title: t("title2"), desc:t("des2") }
+    ]
+    
+    const tabs = [
+      { name: t("SharedArea"), icon: "👥" },
+      { name: t("PrivateOffices"), icon: "🏢" },
+      { name: t("MeetingRooms"), icon: "🤝" },
+      { name: t("DedicatedDesks"), icon: "🖥️" },
+    ];
   return (<>
     <section className="relative w-full max-w-[85%] mx-auto h-[80vh] overflow-hidden rounded-3xl mt-0">
         <Swiper 
@@ -89,13 +94,13 @@ const [activeTab, setActiveTab] = useState("Shared Space");
           <BiSearch className="text-blue-400 w-5 h-5" />
           <input
             type="text"
-            placeholder="Search Here..."
+            placeholder={t("SearchPlaceholder")}
             className="w-full bg-transparent outline-none text-gray-600 placeholder:text-gray-300 py-3"
           />
         </div>
         
         <button className="bg-[#3D5A2B] hover:bg-[#2D431F] text-white px-10 py-3 rounded-xl font-bold transition-colors">
-          Search
+          {t("SearchButton")}
         </button>
       </div>
     </section>
