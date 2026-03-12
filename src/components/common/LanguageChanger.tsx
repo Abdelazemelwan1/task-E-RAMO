@@ -2,7 +2,6 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { LANGUAGES } from '@/lib/const';
 import { useLocale } from 'next-intl';
-import { Link, usePathname } from '@/i18n/navigation'; // تأكد من مسار الـ navigation الخاص بك
 
 export default function LanguageSelector() {
   const locale = useLocale();

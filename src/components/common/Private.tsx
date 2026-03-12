@@ -1,16 +1,10 @@
 import React from 'react'
-import { IoIosArrowForward, IoIosStar } from 'react-icons/io'
-import Image from 'next/image';
-import { HiOutlineUsers, HiOutlineClock } from 'react-icons/hi'; // تأكد من تثبيت react-icons
-import { MdOutlineChevronRight } from 'react-icons/md';
-import { IoHeartCircleOutline } from 'react-icons/io5';
-import { FaShare } from 'react-icons/fa';
-import { TbShare3 } from 'react-icons/tb';
-import { LuHeart } from 'react-icons/lu';
-import { BiDockTop } from 'react-icons/bi';
-import UniversalCard from './UniversalCard';
+import { IoIosArrowForward } from 'react-icons/io'
 
-const listings = [
+import UniversalCard from './UniversalCard';
+import { CardData } from '@/types/carttype';
+
+const listings:CardData[] = [
   {
     id: 1,
     title: "Lawyer Private Office 01",

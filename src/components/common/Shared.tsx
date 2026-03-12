@@ -2,8 +2,9 @@ import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
 
 import UniversalCard from './UniversalCard';
+import { CardData } from '@/types/carttype';
 
-const listings = [
+const listings:CardData[] = [
   {
     id: 1,
     title: "Shared Coworking Spaces",
