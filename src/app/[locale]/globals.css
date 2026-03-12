@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+@layer utilities {
+  @keyframes moveRight {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); } /* خليتها 4 عشان تبان عينك الفرق */
+  }
+
+  .animate-move-right {
+    animation: moveRight 1s ease-in-out infinite;
+  }
+}
