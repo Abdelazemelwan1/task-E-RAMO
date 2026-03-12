@@ -1,35 +1,39 @@
+"use client";
 import { WorkStep } from '@/types/carttype'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
-const Data_Work:WorkStep[] = [
-    {
-        id: 1,
-        title:"Book, Reach or Call",
-        describ : "Search on your beloved office that fits your needs, then book it..",
-        img: "/images/work1.jpg"
-    },
-    {
-        id: 2,
-        title:"Office That Fit You",
-        describ : "You can choose from many varieties the office that fits your needs.",
-        img: "/images/work2.jpg"
-    },
-    {
-        id: 3,
-        title:"Book your Coworking space",
-        describ : "Book your Coworking space in modern place.",
-        img: "/images/work3.jpg"
-    },
-]
 
 export default function Works() {
+      const t = useTranslations("work")
+    
+    const Data_Work:WorkStep[] = [
+        {
+            id: 1,
+            title:t("title1"),
+            describ : t("des1"),
+            img: "/images/work1.jpg"
+        },
+        {
+            id: 2,
+            title:t("title2"),
+            describ :t("des2"),
+            img: "/images/work2.jpg"
+        },
+        {
+            id: 3,
+            title:t("title3"),
+            describ : t("des3"),
+            img: "/images/work3.jpg"
+        },
+    ]
   return (<>
         <section className="max-w-[85%] mx-auto relative   rounded-3xl p-8 mt-28">
             <div className="w-full max-w-[85%] mx-auto  ">
                 <div className="text-center">
-                    <h2 className='text-[30px] font-semibold'>How It Works</h2>
-                    <p className='text-md mt-1 '>Coworking & Flexible Office Marketplace | Search & Book Today</p>
+                    <h2 className='text-[30px] font-semibold'>{t("title")}</h2>
+                    <p className='text-md mt-1 '>{t("des")}</p>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-9">

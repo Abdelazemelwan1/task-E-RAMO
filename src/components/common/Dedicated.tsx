@@ -1,5 +1,5 @@
 "use client";
-import { IoIosArrowForward } from 'react-icons/io'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 import UniversalCard from './UniversalCard';
 import { CardData } from '@/types/carttype';
@@ -63,13 +63,13 @@ export default function Dedicated() {
         <div className="w-full max-w-[85%] mx-auto  ">
             <div className="flex items-center justify-between">
                 <div className="">
-                    <h2 className='text-[30px] font-bold'>Dedicated Desk In Jeddah</h2>
-                    <p className='text-md mt-1 '>Check our latest listings</p>
+                    <h2 className='text-[30px] font-bold'>{t("title")}</h2>
+                    <p className='text-md mt-1 '>{t("des")}</p>
                 </div>
                 <p className='capitalize text-md flex items-center gap-2  cursor-pointer'>
-                    show More 
+                    {t("show")}
                     <span className="inline-block animate-move-right">
-                        <IoIosArrowForward />
+                        {locale === "ar" ? <IoIosArrowBack  /> : <IoIosArrowForward />} 
                     </span>
                 </p>
             </div>

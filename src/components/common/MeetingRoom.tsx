@@ -71,7 +71,7 @@ export default function MeetingRoom() {
                     <p className='text-md mt-1 '>{t("des")}</p>
                 </div>
                 <p className='capitalize text-md flex items-center gap-2  cursor-pointer'>
-                    {t("shows")}
+                    {t("show")}
                     <span className="inline-block animate-move-right">
                                                 {locale === "ar" ? <IoIosArrowBack  /> : <IoIosArrowForward />} 
 

@@ -287,6 +287,29 @@
       "terms4": "Shared Space",
       "terms5": "Dedicated Desks",
       "rights": "2026 All rights reserved for Chair Location | Developed by e-RAMO For Digital Solutions"  }
+  },
+
+  "work" : {
+    "title" : "How It Works",
+    "des" : "Coworking & Flexible Office Marketplace | Search & Book Today",
+    "title1" : "Book, Reach or Call",
+    "title2" : "Office That Fit You",
+    "title3" : "Book your Coworking space",
+    "des1" : "Search on your beloved office that fits your needs, then book it..",
+    "des2" : "You can choose from many varieties the office that fits your needs.",
+    "des3" : "Book your Coworking space in modern place."
+
+  },
+  "location" : {
+    "title" : "Chair Location Coworking space for you",
+    "des" : "Chair Location Coworking space offers you the freedom to work closer to clients, colleagues or home. It's also greener and more cost-effective. With over 40 luxury offices, nobody is better placed than Chair Location to help you make the best of it.",
+    "title1" : "Dedicated Desk",
+    "title2" : "Shared Area Places",
+    "title3" : "Book your Coworking space",
+    "des1" : "If you need to work privately in your own office with your employees without the hassle of operating, a private office would be a great option to rent your office with us in Chair Location.",
+    "des2" : "Our dedicated desks in Chair Location branch in Jeddah is a desk in a communal office space that's set aside just for you for a certain length of time. It's a flexible workspace option somewhere between private office or luxury offices..",
+    "des3" : "A shared area in Jeddah in Chair Location Co-Working space is a communal workspace or facility designed for use by multiple members, rather than being assigned to a single person or team."
+
   }
 
 }
